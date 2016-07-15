@@ -60,7 +60,7 @@ function mappingMast($mast){
     return($mast);
     }
 
-*/
+
 
 function nominalF($PreCrash){
     {
@@ -76,7 +76,7 @@ function nominalF($PreCrash){
 
 
 }
-
+*/
 
 function mastF ($PreCrash)
 {
