@@ -7,7 +7,7 @@ $PreCrash =  string_to_arr($str);
 $Crashed =  crash_arr($PreCrash);
 $nominal = nominalF($PreCrash);
 $mast= mastF($PreCrash);
-$mappedMast = mappingMast($mast);
+//$mappedMast = mappingMast($mast);
 $mappedNominal = mappingNomin($nominal);
 $Answer = sort_arr_1($Crashed, $mast);
 
@@ -39,14 +39,19 @@ function crash_arr ($PreCrash){
 
 function mappingNomin($nominal){
 
+    var_dump($nominal);
     //$MappingNumbersNom = array('1000', '2000', '3000', '4000', '5000', '6000', '7000', '8000', '9000', '10000', '11000', '12000', '13000', '14000');
    //$CardNominal = array("1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "j", "q", "k", "a");
 
-    str_replace(array('1', '2', '3', '4', '5', '6', '7', '8', '9', '10', 'j', 'q', 'k', 'a'), array('1000', '2000', '3000', '4000', '5000', '6000', '7000', '8000', '9000', '10000', '11000', '12000', '13000', '14000'), $nominal);
-    var_dump($nominal);
+    $nominal = str_replace(array('2', '3', '4', '5', '6', '7', '8', '9', '10', 'J', 'Q', 'K', 'A', '1'), array('2000', '3000', '4000', '5000', '6000', '7000', '8000', '9000', '10000', '11000', '12000', '13000', '14000', '1000'), $nominal);
+
+
+
+
+        var_dump($nominal);
     return ($nominal);
     }
-
+/*
 function mappingMast($mast){
 
     $MappingNumbersMast = array('100000', '200000', '300000', '400000');
@@ -57,7 +62,7 @@ function mappingMast($mast){
     return($mast);
     }
 
-
+*/
 
 function nominalF($PreCrash){
     {
