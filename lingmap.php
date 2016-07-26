@@ -37,7 +37,8 @@ function unmapping ($sorted){
 }
 
 function sorting ($mapped){
-    return  sort($mapped);
+
+    sort($mapped);
+    return $mapped;
     }
-?>
 
