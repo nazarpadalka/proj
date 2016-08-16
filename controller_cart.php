@@ -1,10 +1,6 @@
 <?php
 
-require 'controller.php'; //если у тебя есть совет как сдеать чтоб оно нормаьно наследовалось от "класса контроллер" - скажи, если я просто занимаюсь глупостями - тоже скажи)
-require 'model.php';
-require 'view.php';
-require 'index.php';
-
+require_once 'controller.php';
 class Controller_cart extends Controller
 {
 
