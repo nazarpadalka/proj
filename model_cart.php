@@ -2,10 +2,10 @@
 require_once 'model.php';
 class Model_cart extends model
 {
-	public function get_data($d)
+	public function get_data()
 	{
-
-		return $d;
+        $d = $_POST['textOfCards'];
+        return $d;
 	}
 
 }

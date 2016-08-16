@@ -11,12 +11,8 @@ class Controller_cart extends Controller
 		$this->view = new View_cart();
 	}
 
-
 	function action_index(){
-
-		$d = $_POST['textOfCards'];
-		echo $d;
-		$data = $this->model->get_data($d);
+		$data = $this->model->get_data();
 		$this->view->generate(file_get_contents('front.html'), $data);
 	}
 

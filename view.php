@@ -3,6 +3,10 @@
 class View
 {
 	public $data;
+
+	function generate($content, $data){
+		
+	}
 	//public $template_view; // здесь можно указать общий вид по умолчанию.
 	
 	/*
