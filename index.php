@@ -10,9 +10,9 @@
 </center>
 </body>
 <?php
-
-require_once 'controller.php';
-require_once 'model.php';
+// в форме выше я передаю в файл контроллер сдержимое текстбара
+require_once 'controller.php';   // не обращай внимания на кол-во рекваиров, это я методом проб и ошибок исследовал как они работают,
+require_once 'model.php';       
 require_once 'view.php';
 
 /*public class viev_cart extends viev{
