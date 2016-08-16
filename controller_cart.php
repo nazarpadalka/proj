@@ -1,5 +1,7 @@
 <?php
 require_once 'controller.php';
+require_once 'view_cart.php';
+require_once 'model_cart.php';
 class Controller_cart extends Controller
 {
 
@@ -12,16 +14,12 @@ class Controller_cart extends Controller
 
 	function action_index(){
 
-		$d = $_POST['textOfCards']; // принимаю данные из индекс.пхп.
-		var_dump($d);				// вар дамп не срабатывает, не могу понять почему метод не запускается.
+		$d = $_POST['textOfCards'];
 		echo $d;
-		$data = $this->model->get_data();
-		var_dump($data);
-		$this->view->generate('index.php', $data);
+		$data = $this->model->get_data($d);
+		$this->view->generate(file_get_contents('front.html'), $data);
 	}
 
-	$cartController = new controller_cart();
-	$cartController->action_index();
-
-
 }
+$cartController = new Controller_cart ();
+$cartController->action_index();

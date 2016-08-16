@@ -1,9 +1,12 @@
 <?php
 require_once 'view.php';
-class View_cart extends view
+class View_cart extends View
 {
-		$homepage = file_get_contents(front.html);
-		echo $homepage;
+	function generate($content, $data){
+
+		echo $content.$data;
+	}
+
 	//public $template_view; // здесь можно указать общий вид по умолчанию.
 	
 	/*
