@@ -12,7 +12,7 @@ class Controller_cart extends Controller
 	}
 
 	function action_index(){
-		$data = $this->model->get_data();
+		$data = $this->model->run();
 		$this->view->generate(file_get_contents('front.html'), $data);
 	}
 
