@@ -2,22 +2,21 @@
 require_once 'model.php';
 class Model_cart extends model
 {
-	public function run()
-	{
-        
-        $str =  this->get_string();
-        $PreCrash = this->string_to_arr($str);
-        $mapped = this->mapping($PreCrash);
-        $sorted = this->sorting($mapped);
-        $unmapped = this->unmapping($sorted);
-        return $unmapped;
+	public function run($input){
+        $str =  $this->getString($input);
+        $PreCrash = $this->stringToArr($str);
+        $mapped = $this->mapping($PreCrash);
+        $sorted = $this->sorting($mapped);
+        $unmapped = $this->unmapping($sorted);
+        $sortedString = $this->arrToString($unmapped);
+        return $sortedString;
 	}
 
-    function get_string (){
-        return $str = $_POST['textOfCards'];
+    function getString ($input){
+        return $str = $input;
     }
 
-    function string_to_arr ($str){
+    function stringToArr ($str){
         return explode(",", $str);
     }
 
@@ -48,6 +47,10 @@ class Model_cart extends model
         sort($mapped);
         return $mapped;
     }
-    
+
+    function arrToString($unmapped){
+
+    return implode(",", $unmapped);
+    }
     
 }

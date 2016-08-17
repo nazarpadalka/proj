@@ -4,6 +4,7 @@ require_once 'view.php';
 class Controller {
 	public $model;
 	public $view;
+	public $inputCheck;
 
 	function __construct()
 	{
