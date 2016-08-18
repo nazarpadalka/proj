@@ -6,8 +6,10 @@ class inputCheckCart extends inputCheck
 	{
 		$str = $_POST['textOfCards'];
         if (!empty($str)){
-            if ($str = '/[0-9a-z_]'){
-                $str = "error";
+            $regular = preg_match('[\d|A|Q|K|J]+[B|C|D|E]', $str);
+            if ($regular != 1){
+                $str = null;
+                echo "Error";
             }
         }
 		return $str;
