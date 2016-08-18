@@ -4,8 +4,6 @@
  */
 class inputCheck
 {
-
-
 	public function Check()
 	{
 		// todo

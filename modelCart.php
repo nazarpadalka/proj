@@ -1,6 +1,9 @@
 <?php
 require_once 'model.php';
-class Model_cart extends model
+/**
+ * Doc-блок здесь
+ */
+class ModelCart extends model
 {
 	public function run($input){
         $str =  $this->getString($input);

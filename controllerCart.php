@@ -1,24 +1,28 @@
 <?php
 require_once 'controller.php';
-require_once 'view_cart.php';
-require_once 'model_cart.php';
+require_once 'viewCart.php';
+require_once 'modelCart.php';
 require_once 'inputCheckCart.php';
-class Controller_cart extends Controller
+
+/**
+ * Doc-блок здесь
+ */
+class ControllerCart extends Controller
 {
 
 	function __construct()
 	{
-		$this->model = new Model_cart();
-		$this->view = new View_cart();
+		$this->model = new ModelCart();
+		$this->view = new ViewCart();
 		$this->inputCheck = new inputCheckCart();
 	}
 
-	function action_index(){
+	function actionIndex(){
 		$input = $this->inputCheck->Check();
 		$data = $this->model->run($input);
 		$this->view->generate(file_get_contents('front.html'), $data);
 	}
 
 }
-$cartController = new Controller_cart ();
-$cartController->action_index();
+$cartController = new ControllerCart();
+$cartController->actionIndex();

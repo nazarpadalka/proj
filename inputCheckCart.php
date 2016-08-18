@@ -1,5 +1,8 @@
 <?php
 require_once 'inputCheck.php';
+/**
+ * Doc-блок здесь
+ */
 class inputCheckCart extends inputCheck
 {
 	public function Check()

@@ -1,6 +1,9 @@
 <?php
 require_once 'model.php';
 require_once 'view.php';
+/**
+ * Doc-блок здесь
+ */
 class Controller {
 	public $model;
 	public $view;
@@ -12,7 +15,7 @@ class Controller {
 	}
 
 	// действие (action), вызываемое по умолчанию
-	function action_index()
+	function actionIndex()
 	{
 		// todo
 	}
