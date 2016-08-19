@@ -18,12 +18,12 @@ class ControllerCart extends Controller
 	}
 
 	function actionIndex(){
-		if ($this->inputCheck->Check() == null){
+		 $input = $this->inputCheck->Check();
+		if ($input == "error"){
 			$data = 'Error';
 			$this->view->generate(file_get_contents('front.html'), $data);
 		}
 		else{
-			$input = $this->inputCheck->Check();
 			$data = $this->model->run($input);
 			$this->view->generate(file_get_contents('front.html'), $data);
 		}
