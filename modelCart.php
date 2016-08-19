@@ -32,7 +32,12 @@ class ModelCart extends model
     }
 
     function sorting ($mapped){
-        sort($mapped);
+        if ($_POST['answer'] == up) {
+            asort($mapped);
+        }
+        else {
+            arsort($mapped);
+        }
         return $mapped;
     }
 
