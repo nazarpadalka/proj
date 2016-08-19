@@ -6,8 +6,8 @@ require_once 'model.php';
 class ModelCart extends model
 {
 	public function run($input){
-        $str =  $this->getString($input);
-        $PreCrash = $this->stringToArr($str);
+
+        $PreCrash = $this->stringToArr($input);
         $mapped = $this->mapping($PreCrash);
         $sorted = $this->sorting($mapped);
         $unmapped = $this->unmapping($sorted);
@@ -15,22 +15,8 @@ class ModelCart extends model
         return $sortedString;
 	}
 
-    function getString ($input){
-        return $str = $input;
-    }
-
     function stringToArr ($str){
         return explode(",", $str);
-    }
-
-    function crash_arr ($PreCrash){
-        $Crashed = array();
-        foreach ($PreCrash as $str) {
-            $m = $str[strlen($str) - 1];
-            $str = str_replace($m, '', $str);
-            $Crashed[] = array("m" => "$m", "d" => $str);
-        }
-        return $Crashed;
     }
 
     function mapping ($PreCrash){
@@ -46,14 +32,12 @@ class ModelCart extends model
     }
 
     function sorting ($mapped){
-
         sort($mapped);
         return $mapped;
     }
 
     function arrToString($unmapped){
-
-    return implode(",", $unmapped);
+        return implode(",", $unmapped);
     }
     
 }
