@@ -10,7 +10,7 @@ class inputCheckCart extends inputCheck
 		$str = $_POST['textOfCards'];
         if ($str != ''){
             if (preg_match("/[\d|A|Q|K|J]+[B|C|D|E]/", $str) != 1){
-                $str = "error";
+                $str = 'error';
             }
         }
         return $str;

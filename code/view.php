@@ -6,7 +6,8 @@ class View
 {
 	public $data;
 
-	function generate($content, $data){
+	function generate($content, $data)
+	{
 		//todo
 	}
 }

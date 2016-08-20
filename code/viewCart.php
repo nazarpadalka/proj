@@ -5,8 +5,8 @@ require_once 'view.php';
  */
 class ViewCart extends View
 {
-	function generate($content, $data){
-
+	function generate($content, $data)
+	{
 		echo $content.$data;
 	}
 }
