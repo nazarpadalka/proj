@@ -1,12 +1,12 @@
 <?php
-require_once 'view.php';
+require_once 'application\core\view.php';
 /**
  *Класс для отображения контента страницы с сортировкой карт
  */
 class ViewCart extends View
 {
-	function generate($content, $data)
+	function generate($teplate, $content, $data)
 	{
-		echo $content.$data;
+		echo $teplate . $content . $data;
 	}
 }

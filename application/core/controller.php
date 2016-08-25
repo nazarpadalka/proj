@@ -1,9 +1,4 @@
 <?php
-require_once 'model.php';
-require_once 'view.php';
-/**
- * Doc-блок здесь
- */
 class Controller {
 	public $model;
 	public $view;
@@ -16,6 +11,6 @@ class Controller {
 
 	function actionIndex()
 	{
-		// todo
+		$this->view->generate(file_get_contents('application\front.html'), $data, 1);
 	}
 }

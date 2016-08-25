@@ -1,5 +1,5 @@
 <?php
-require_once 'model.php';
+require_once 'application\core\model.php';
 /**
  * Doc-блок здесь
  */

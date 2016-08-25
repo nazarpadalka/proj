@@ -6,8 +6,8 @@ class View
 {
 	public $data;
 
-	function generate($content, $data)
+	function generate($teplate, $content, $data)
 	{
-		//todo
+		echo $teplate . $content . $data;
 	}
 }

@@ -1,8 +1,7 @@
 <?php
-require_once 'controller.php';
-require_once 'viewCart.php';
-require_once 'modelCart.php';
-require_once 'inputCheckCart.php';
+require_once 'application\views\viewCart.php';
+require_once 'application\models\modelCart.php';
+require_once 'application\inputCheck\inputCheckCart.php';
 
 /**
  * Doc-блок здесь
@@ -22,11 +21,11 @@ class ControllerCart extends Controller
 		 $input = $this->inputCheck->Check();
 		if ($input == "error"){
 			$data = 'Error';
-			$this->view->generate(file_get_contents('code\front.html'), $data);
+			$this->view->generate(file_get_contents('application\template.html'), file_get_contents('application\cart.html'), $data);
 		}
 		else{
 			$data = $this->model->run($input);
-			$this->view->generate(file_get_contents('code\front.html'), $data);
+			$this->view->generate(file_get_contents('application\template.html'), file_get_contents('application\cart.html'), $data);
 		}
 	}
 

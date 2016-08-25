@@ -1,5 +1,5 @@
 <?php
-require_once 'inputCheck.php';
+require_once 'application\core\inputCheck.php';
 /**
  * Doc-блок здесь
  */

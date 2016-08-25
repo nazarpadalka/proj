@@ -1,5 +1,4 @@
 <?php
-require_once '\code\controllerCart.php';
-
-
+require 'application\bootstrap.php';
+//require_once 'application\controllers\controllerCart.php';
 
