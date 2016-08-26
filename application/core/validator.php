@@ -2,7 +2,7 @@
 /*
  * класс для проверки првильности введенных данных
  */
-class inputCheck
+class validator
 {
 	public function Check()
 	{

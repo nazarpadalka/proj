@@ -1,20 +1,22 @@
 <?php
 require_once 'application\core\model.php';
-/**
- * Doc-блок здесь
- */
 class ModelCart extends model
 {
-	public function run($input)
+	public function run()
     {
-        $PreCrash = $this->stringToArr($input);
+        $str = $this->getString();
+        $PreCrash = $this->stringToArr($str);
         $mapped = $this->mapping($PreCrash);
         $sorted = $this->sorting($mapped);
         $unmapped = $this->unmapping($sorted);
         $sortedString = $this->arrToString($unmapped);
         return $sortedString;
 	}
-
+    function getString()
+    {
+        return $_POST['textOfCards'];
+        
+    }
     function stringToArr($str)
     {
         return explode(",", $str);

@@ -8,8 +8,12 @@ class Route
 		if (!empty($routes)) {
 			$controllerName = $routes;
 		}
-		$controllerFile = 'controller' . $controllerName . '.php';
+		$controllerClass = 'controller' . $controllerName;
+		$controllerFile = $controllerClass  . '.php';
 		include "application/controllers/" . $controllerFile;
+
+		$cartController = new $controllerClass();
+		$cartController->actionIndex();
 	}
     
 }

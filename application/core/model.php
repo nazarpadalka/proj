@@ -1,10 +1,7 @@
 <?php
-/**
- * Doc-блок здесь
- */
 class Model
 {
-	public function run($input){
+	public function run(){
 		// todo
 	}
 	

@@ -7,5 +7,3 @@ class ControllerMain extends Controller
 		$this->view->generate(file_get_contents('application\template.html'), file_get_contents('application\main.html'), $data);
 	}
 }
-$mainController = new ControllerMain();
-$mainController->actionIndex();
