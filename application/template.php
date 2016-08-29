@@ -1,6 +1,9 @@
 <html>
 <head>
 <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <style type="text/css">
+        <? include "css/stolenStyle.css" ?>
+    </style>
     <title>Сайт</title>
 </head>
 <body>
