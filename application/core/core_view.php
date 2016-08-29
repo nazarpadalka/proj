@@ -3,9 +3,9 @@ class core_view
 {
 	public $data;
 
-	function generate($data)
+	function generate($template, $page, $data)
 	{
-		echo file_get_contents('application\template.html');
-		echo $data;
+		echo $template;
+		echo $page . $data;
 	}
 }

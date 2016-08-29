@@ -2,9 +2,9 @@
 
 class views_viewMain extends core_view
 {
-	function generate($data)
+	function generate($template, $main, $data)
 	{
-		echo file_get_contents('application\template.html');
-		echo file_get_contents('application\Main.html') . $data;
+		echo $template;
+		echo $main . $data;
 	}
 }

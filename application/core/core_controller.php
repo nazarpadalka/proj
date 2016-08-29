@@ -11,6 +11,6 @@ class core_Controller {
 	
 	function actionIndex()
 	{
-		$this->view->generate(file_get_contents('application\front.html'), $data, 1);
+		$this->view->generate(file_get_contents('application\front.html'), $data);
 	}
 }

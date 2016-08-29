@@ -1,10 +1,4 @@
 <?php
-spl_autoload_register(function ($class)
-{
-	$classname = $class;
-	$class = explode("_", $class);
-	require_once 'application/' .$class[0] . '/' . $classname . '.php';
-});
 class controllers_controllerCart extends core_Controller
 {
 	function __construct()
@@ -23,6 +17,6 @@ class controllers_controllerCart extends core_Controller
 		else{
 			$data = $this->model->run();
 		}
-		$this->view->generate($data);
+		$this->view->generate(file_get_contents('application\template.php'), file_get_contents('application\cart.html'), $data);
 	}
 }

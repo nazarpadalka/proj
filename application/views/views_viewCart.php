@@ -1,9 +1,9 @@
 <?php
 class views_viewCart extends core_view
 {
-	function generate($data)
+	function generate($template, $cart, $data)
 	{
-		echo file_get_contents('application\template.html');
-		echo file_get_contents('application\cart.html') . $data;
+		echo $template;
+		echo $cart . $data;
 	}
 }
