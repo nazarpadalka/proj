@@ -7,10 +7,7 @@
 <div id="wrapper">
     <div id="header">
         <div id="menu">
-            <ul>
-                <li class="first active"><a href="/">Главная</a></li>
-                <li><a href="index.php?act=Cart">Карты</a></li>
-            </ul>
+           <?php require_once 'application/menu.php'?>
             <br class="clearfix" />
         </div>
     </div>

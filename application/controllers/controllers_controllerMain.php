@@ -9,6 +9,6 @@ class controllers_controllerMain extends core_controller
 
 	function actionIndex()
 	{
-		$this->view->generate(file_get_contents('application\template.php'), file_get_contents('application\main.html'), $data);
+		$this->view->generate('template.php', file_get_contents('application\main.html'), $data);
 	}
 }

@@ -4,7 +4,7 @@ class views_viewMain extends core_view
 {
 	function generate($template, $main, $data)
 	{
-		echo $template;
+		require_once 'application/' . $template;
 		echo $main . $data;
 	}
 }

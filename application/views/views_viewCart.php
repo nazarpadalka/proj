@@ -3,7 +3,7 @@ class views_viewCart extends core_view
 {
 	function generate($template, $cart, $data)
 	{
-		echo $template;
+		require_once 'application/' . $template;
 		echo $cart . $data;
 	}
 }
