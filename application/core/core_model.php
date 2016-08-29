@@ -1,5 +1,5 @@
 <?php
-class Model
+class core_Model
 {
 	public function run(){
 		// todo

@@ -1,12 +1,12 @@
 <?php
-class Controller {
+class core_Controller {
 	public $model;
 	public $view;
 	public $validator;
 
 	function __construct()
 	{
-		$this->view = new View();
+		$this->view = new core_view();
 	}
 	
 	function actionIndex()

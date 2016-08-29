@@ -1,6 +1,5 @@
 <?php
-require_once 'application\core\validator.php';
-class validatorCart extends validator
+class validators_validatorCart extends core_validator
 {
 	public function Check()
 	{

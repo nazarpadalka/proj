@@ -1,6 +1,5 @@
 <?php
-require_once 'application\core\model.php';
-class ModelCart extends model
+class models_modelCart extends core_model
 {
 	public function run()
     {

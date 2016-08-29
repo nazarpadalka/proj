@@ -1,5 +1,5 @@
 <?php
-class Route
+class core_route
 {
 	static function start()
 	{
@@ -8,7 +8,7 @@ class Route
 		if (!empty($routes)) {
 			$controllerName = $routes;
 		}
-		$controllerClass = 'controller' . $controllerName;
+		$controllerClass = 'controllers_controller' . $controllerName;
 		$controllerFile = $controllerClass  . '.php';
 		include "application/controllers/" . $controllerFile;
 
