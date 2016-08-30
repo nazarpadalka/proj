@@ -10,7 +10,7 @@ class core_route
 		}
 		$controllerClass = 'controllers_controller' . $controllerName;
 		$controllerFile = $controllerClass  . '.php';
-		include "application/controllers/" . $controllerFile;
+		require_once "application/controllers/" . $controllerFile;
 
 		$cartController = new $controllerClass();
 		$cartController->actionIndex();

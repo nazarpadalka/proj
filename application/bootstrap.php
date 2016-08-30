@@ -7,5 +7,5 @@ spl_autoload_register(function ($class)
     require_once 'application/' .$class[0] . '/' . $classname . '.php';
 });
 
-require_once 'application\core\core_route.php';
+require_once 'application/core/core_route.php';
 core_Route::start();

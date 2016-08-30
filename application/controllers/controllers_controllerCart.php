@@ -17,6 +17,6 @@ class controllers_controllerCart extends core_Controller
 		else{
 			$data = $this->model->run();
 		}
-		$this->view->generate('template.php', file_get_contents('application\cart.html'), $data);
+		$this->view->generate('template.phtml', file_get_contents('application/cart.html'), $data);
 	}
 }
