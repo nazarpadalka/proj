@@ -5,7 +5,7 @@ class core_view
 
 	function generate($template, $page, $data)
 	{
-		echo $template;
-		echo $page . $data;
+		require_once 'application/' . $template;
+		echo file_get_contents('application/' . $page) . $data;
 	}
 }

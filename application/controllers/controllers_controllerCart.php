@@ -1,6 +1,13 @@
 <?php
-class controllers_controllerCart extends core_Controller
+
+/**
+ * Class controllers_controllerCart
+ */
+class controllers_controllerCart extends core_controller
 {
+	/**
+	 * controllers_controllerCart constructor.
+     */
 	function __construct()
 	{
 		$this->model = new models_ModelCart();
@@ -8,6 +15,9 @@ class controllers_controllerCart extends core_Controller
 		$this->validator = new validators_validatorCart();
 	}
 
+	/**
+	 *
+     */
 	function actionIndex()
 	{
 		$input = $this->validator->Check();
@@ -17,6 +27,6 @@ class controllers_controllerCart extends core_Controller
 		else{
 			$data = $this->model->run();
 		}
-		$this->view->generate('template.phtml', file_get_contents('application/cart.html'), $data);
+		$this->view->generate('template.phtml', 'cart.html', $data);
 	}
 }
