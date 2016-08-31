@@ -1,16 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6af6f65c-e010-4d91-8085-66431a7553b1" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/controllers/controllers_controllerCart.php" afterPath="$PROJECT_DIR$/application/controllers/controllers_controllerCart.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/controllers/controllers_controllerMain.php" afterPath="$PROJECT_DIR$/application/controllers/controllers_controllerMain.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/core/core_controller.php" afterPath="$PROJECT_DIR$/application/core/core_controller.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/core/core_view.php" afterPath="$PROJECT_DIR$/application/core/core_view.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/menu.php" afterPath="$PROJECT_DIR$/application/menu.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/template.phtml" afterPath="$PROJECT_DIR$/application/template.phtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/views_viewCart.php" afterPath="$PROJECT_DIR$/application/views/views_viewCart.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/views_viewMain.php" afterPath="$PROJECT_DIR$/application/views/views_viewMain.php" />
-    </list>
+    <list default="true" id="6af6f65c-e010-4d91-8085-66431a7553b1" name="Default" comment="" />
     <ignored path="proj.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
@@ -85,7 +76,7 @@
         <entry file="file://$PROJECT_DIR$/application/template.phtml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="323">
-              <caret line="19" column="7" selection-start-line="19" selection-start-column="7" selection-end-line="19" selection-end-column="7" />
+              <caret line="19" column="2" selection-start-line="19" selection-start-column="2" selection-end-line="19" selection-end-column="2" />
               <folding />
             </state>
           </provider>
@@ -363,12 +354,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1472600368932</updated>
-      <workItem from="1472600381867" duration="6715000" />
+      <workItem from="1472600381867" duration="7713000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6715000" />
+    <option name="totallyTimeSpent" value="7713000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -500,7 +491,7 @@
     <entry file="file://$PROJECT_DIR$/application/template.phtml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
-          <caret line="19" column="7" selection-start-line="19" selection-start-column="7" selection-end-line="19" selection-end-column="7" />
+          <caret line="19" column="2" selection-start-line="19" selection-start-column="2" selection-end-line="19" selection-end-column="2" />
           <folding />
         </state>
       </provider>
